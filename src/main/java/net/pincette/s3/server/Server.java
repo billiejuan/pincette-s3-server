@@ -661,6 +661,8 @@ public class Server {
       final HttpResponse httpResponse, final PutObjectResponse s3Response) {
     return Builder.create(() -> httpResponse)
         .updateIf(() -> ofNullable(s3Response.eTag()), (o, v) -> o.headers().add(ETAG, v))
+        .updateIf(
+                    () -> ofNullable(s3Response.versionId()), (o, v) -> o.headers().add(VERSION_ID, v))
         .build();
   }
 
