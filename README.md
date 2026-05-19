@@ -1,6 +1,9 @@
 # S3 Server
 
-With the server you can upload multiple files at the same time with a `multipart/form-data` message. The methods `GET`, `PUT` and `HEAD` are also available for individual objects. Metadata in JSON format can be put on the objects.
+With the server you can upload multiple files at the same time with a `multipart/form-data` 
+message. The methods `GET`, `PUT` and `HEAD` are also available for individual objects. 
+The `PUT` method returns the `etag` and `version-id` headers if this information is 
+available. Metadata in JSON format can be put on the objects.
 
 ## Object Keys
 
