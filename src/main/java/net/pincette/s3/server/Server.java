@@ -155,6 +155,7 @@ public class Server {
   private static final String NAME = "name";
   private static final String OCTET_STREAM = "application/octet-stream";
   private static final String READ = "read";
+  private static final String RESPONSE_VERSION_ID = "version-id";
   private static final String ROLES = "roles";
   private static final String SIZE = "size";
   private static final String VERSIONS = "_versions";
@@ -662,7 +663,8 @@ public class Server {
     return Builder.create(() -> httpResponse)
         .updateIf(() -> ofNullable(s3Response.eTag()), (o, v) -> o.headers().add(ETAG, v))
         .updateIf(
-                    () -> ofNullable(s3Response.versionId()), (o, v) -> o.headers().add(VERSION_ID, v))
+            () -> ofNullable(s3Response.versionId()),
+            (o, v) -> o.headers().add(RESPONSE_VERSION_ID, v))
         .build();
   }
 
