@@ -6,7 +6,7 @@
 
   <groupId>net.pincette</groupId>
   <artifactId>pincette-s3-server</artifactId>
-  <version>1.1.4</version>
+  <version>1.1.5</version>
   <name>pincette-s3-server</name>
   <description>S3 Webserver</description>
   <url>https://github.com/wdonne/pincette-s3-server</url>
@@ -62,12 +62,12 @@
     <dependency>
       <groupId>net.pincette</groupId>
       <artifactId>pincette-s3-util</artifactId>
-      <version>1.1.6</version>
+      <version>1.1.7</version>
     </dependency>
     <dependency>
       <groupId>net.pincette</groupId>
       <artifactId>pincette-netty-http</artifactId>
-      <version>3.2.19</version>
+      <version>3.2.21</version>
     </dependency>
     <dependency>
       <groupId>net.pincette</groupId>
@@ -77,22 +77,22 @@
     <dependency>
       <groupId>net.pincette</groupId>
       <artifactId>pincette-rs</artifactId>
-      <version>3.11.7</version>
+      <version>3.11.8</version>
     </dependency>
     <dependency>
       <groupId>net.pincette</groupId>
       <artifactId>pincette-rs-json</artifactId>
-      <version>1.0.31</version>
+      <version>1.0.32</version>
     </dependency>
     <dependency>
       <groupId>net.pincette</groupId>
       <artifactId>pincette-rs-multipart</artifactId>
-      <version>1.0.6</version>
+      <version>1.0.7</version>
     </dependency>
     <dependency>
       <groupId>net.pincette</groupId>
       <artifactId>pincette-config-util</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.6</version>
     </dependency>
     <dependency>
       <groupId>org.glassfish</groupId>
